@@ -1,0 +1,13 @@
+# docker 실행
+docker start -ai jh_pytorch
+exec
+
+# docker mount
+docker run -itd --name jp_pytorch --ipc=host -v /home/jung//:/workspace/ -p 111:111 --gpus all --restart=always pytorch/pytorch
+
+# docker container 확인
+docker ps
+docker ps -a
+
+#docker 삭제
+docker rm [컨테이너 이름]
