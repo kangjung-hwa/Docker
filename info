@@ -3,7 +3,8 @@ docker start -ai jh_pytorch
 exec
 
 # docker mount
-docker run -itd --name jp_pytorch --ipc=host -v /home/jung//:/workspace/ -p 111:111 --gpus all --restart=always pytorch/pytorch
+docker run -itd --name jh_pytorch --ipc=host -v /home/jung/rl/:/workspace/ -p 111:111 --gpus all --restart=always pytorch/pytorch
+docker run -itd --name jh_cpp --ipc=host -v /home/jung/cpp/:/workspace/ -p 112:112 --gpus all --restart=always gcc
 
 # docker container 확인
 docker ps
