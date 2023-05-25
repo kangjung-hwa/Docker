@@ -1,0 +1,6 @@
+ctrl+shift+p 명령
+
+tasks.json  - complier build settings
+launch.json - debugger settings
+c_cpp_properties.json  - complier path and IntelliSense settings
+
